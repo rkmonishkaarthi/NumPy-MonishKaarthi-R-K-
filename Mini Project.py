@@ -12,3 +12,5 @@ print("\nAvg Sales per Employee:\n",avg)
 month_avg = np.mean(sales, axis=0)
 print("\nAvg Sales per Month:\n", month_avg)
 
+best_employee = np.argmax(employee_avg)
+print("\nBest Employee :", best_employee)
