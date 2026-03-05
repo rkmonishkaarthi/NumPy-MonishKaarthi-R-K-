@@ -39,3 +39,5 @@ print(df)
 
 df["review_rating"] = df["review_rating"].apply(lambda x: x + 0.5)
 print(df)
+
+print(df.duplicated())
