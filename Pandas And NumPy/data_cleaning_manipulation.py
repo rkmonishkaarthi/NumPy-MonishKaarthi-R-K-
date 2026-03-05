@@ -30,3 +30,9 @@ print(sorted_df)
 
 conditional_sort = df[(df["review_rating"] > 3) & (df["best_avg_score"] > 0)]
 print(conditional_sort)
+
+def increase_score(x):
+    return x + 1
+
+df["best_avg_score"] = df["best_avg_score"].apply(increase_score)
+print(df)
