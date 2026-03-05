@@ -21,3 +21,6 @@ df.rename(columns={"main_category": "category"}, inplace=True)
 print(df)
 
 print(df.dtypes)
+
+df["best_avg_score"] = df["best_avg_score"].astype("float32")
+print(df.dtypes)
