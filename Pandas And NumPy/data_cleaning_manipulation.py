@@ -19,3 +19,5 @@ print(df1)
 df.rename(columns={"name": "product_name"}, inplace=True)
 df.rename(columns={"main_category": "category"}, inplace=True)
 print(df)
+
+print(df.dtypes)
